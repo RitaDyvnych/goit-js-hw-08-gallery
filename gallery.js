@@ -3,10 +3,6 @@ import {galleryItems} from './app.js';
 // Создание и рендер разметки по массиву данных galleryItems
 
 const galleryConteiner = document.querySelector('.js-gallery');
-const lightboxContainer = document.querySelector('.js-lightbox');
-const closeBtn = document.querySelector('.lightbox__button');
-const lightboxOverlay = document.querySelector('.lightbox__overlay');
-const lightboxImg = document.querySelector('.lightbox__image');
 const galleryMarkup = createGalleryCardsMarkup(galleryItems);
 galleryConteiner.insertAdjacentHTML('beforeend', galleryMarkup);
 
